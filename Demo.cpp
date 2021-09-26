@@ -148,7 +148,7 @@ void Demo::BuildColoredCube() {
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	int width, height;
-	unsigned char* image = SOIL_load_image("crate.png", &width, &height, 0, SOIL_LOAD_RGBA);
+	unsigned char* image = SOIL_load_image("Wood.png", &width, &height, 0, SOIL_LOAD_RGBA);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
 	SOIL_free_image_data(image);
 	glBindTexture(GL_TEXTURE_2D, 0);
@@ -293,32 +293,32 @@ void Demo::BuildColoredCube() {
 		//depan
 		 -1.8, 3.4, -1.2, 0, 0,	 // 84
 		 1.8, 3.4, -1.2, 1, 0, 	 // 85
-		 1.8, 8.4, -1.2, 1, 1,	 // 86
-		 -1.8, 8.4, -1.2, 0, 1, // 87
+		 1.8, 7.4, -1.2, 1, 1,	 // 86
+		 -1.8, 7.4, -1.2, 0, 1, // 87
 
 		//belakang
 		 -1.8, 3.4, -1.6, 0, 0,	// 88
 		 1.8, 3.4, -1.6, 1, 0,		// 89
-		 1.8, 8.4, -1.6, 1, 1,		// 90
-		 -1.8, 8.4, -1.6, 0, 1,	// 91
+		 1.8, 7.4, -1.6, 1, 1,		// 90
+		 -1.8, 7.4, -1.6, 0, 1,	// 91
 
 		//kiri
 		 - 1.8, 3.4, -1.6, 0, 0,	// 92
-		 - 1.8, 8.4, -1.6, 1, 0,	// 93
-		 - 1.8, 8.4, -1.2, 1, 1,	// 94
+		 - 1.8, 7.4, -1.6, 1, 0,	// 93
+		 - 1.8, 7.4, -1.2, 1, 1,	// 94
 		 - 1.8, 3.4, -1.2, 0, 1,	// 95
 
 		//kanan
 		 1.8, 3.4, -1.6, 0, 0,		// 96
-		 1.8, 8.4, -1.6, 1, 0,		// 97
-		 1.8, 8.4, -1.2, 1, 1,		// 98
+		 1.8, 7.4, -1.6, 1, 0,		// 97
+		 1.8, 7.4, -1.2, 1, 1,		// 98
 		 1.8, 3.4, -1.2, 0, 1,		// 99
 
 		//atas
-		 - 1.8, 8.4, -1.6, 0, 0,	// 100
-		 - 1.8, 8.4, -1.2, 1, 0,	// 101
-		 1.8, 8.4, -1.2, 1, 1,		// 102
-		 1.8, 8.4, -1.6, 0, 1,		// 103
+		 - 1.8, 7.4, -1.6, 0, 0,	// 100
+		 - 1.8, 7.4, -1.2, 1, 0,	// 101
+		 1.8, 7.4, -1.2, 1, 1,		// 102
+		 1.8, 7.4, -1.6, 0, 1,		// 103
 		
 	};
 
@@ -480,13 +480,13 @@ void Demo::DrawColoredPlane()
 void Demo::InitCamera()
 {
 	posCamX = 0.0f;
-	posCamY = 4.0f;
+	posCamY = 5.0f;
 	posCamZ = 8.0f;
 	viewCamX = 0.0f;
-	viewCamY = 4.0f;
+	viewCamY = 5.0f;
 	viewCamZ = 0.0f;
 	upCamX = 0.0f;
-	upCamY = 4.0f;
+	upCamY = 5.0f;
 	upCamZ = 0.0f;
 	CAMERA_SPEED = 0.001f;
 	fovy = 45.0f;
